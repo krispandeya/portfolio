@@ -1,38 +1,476 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rajbin Karki | Student Portfolio</title>
-    <meta name="description" content="Portfolio of Rajbin Karki - Grade 9 student at Triyog High School, Kathmandu. 25 WSC medals, Top 3 academic rank, and passionate about coding and innovation." />
-    <meta name="author" content="Rajbin Karki" />
-    <meta name="keywords" content="Rajbin Karki, student portfolio, Triyog High School, World Scholar's Cup, Nepal, Kathmandu" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kris Pandeya | Portfolio</title>
+  <meta name="description" content="Kris Pandeya — student, gavelier, and leader in technology, MUN, and social impact.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-mesh"></div>
+  <div class="noise-overlay"></div>
 
-    <meta property="og:title" content="Rajbin Karki | Student Portfolio" />
-    <meta property="og:description" content="Grade 9 student at Triyog High School with 25 WSC medals and a passion for coding and innovation." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="#introduction">
+        <img src="assets/logo.svg" alt="Kris Pandeya logo">
+        <span>Kris Pandeya</span>
+      </a>
+      <nav class="nav">
+        <a href="#introduction">Home</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#awards">Awards</a>
+        <a href="#languages">Languages</a>
+      </nav>
+      <div class="header-actions">
+        <button class="ghost-btn" id="themeToggle" aria-label="Toggle theme">Theme</button>
+        <a class="primary-btn" href="mailto:krispandeya@triyog.edu.np">Contact</a>
+      </div>
+    </div>
+  </header>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Rajbin Karki | Student Portfolio" />
-    <meta name="twitter:description" content="Grade 9 student at Triyog High School with 25 WSC medals and a passion for coding and innovation." />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <main>
+    <section id="introduction" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-content" data-reveal>
+          <p class="eyebrow">Student · Gavelier · Leader</p>
+          <h1>Building thoughtful tech, leading with purpose.</h1>
+          <p class="lead">
+            I’m Kris Pandeya from Kathmandu, Nepal — A student passionate about learning, growth, and embracing new challenges who values consistency, curiosity, and striving for excellence with purpose and focus.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#projects">Explore Projects</a>
+            <a class="ghost-btn" href="#experience">View Experience</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-card" data-reveal>
+              <span>14+ years</span>
+              <p>Learning journey</p>
+            </div>
+            <div class="stat-card" data-reveal>
+              <span>40+ events</span>
+              <p>Competitions and leadership roles</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual" data-reveal>
+          <div class="profile-card">
+            <img src="assets/profile.svg" alt="Kris Pandeya portrait">
+            <div class="profile-details">
+              <h2>Kris Pandeya</h2>
+              <p>Technology · Public Speaking · Design</p>
+              <div class="badge-row">
+                <span class="badge">Student</span>
+                <span class="badge">Gavelier</span>
+                <span class="badge">Programming Advocate</span>
+                <span class="badge">Public Speaker</span>
+                <span class="badge">Prompt Engineer</span>
+                <span class="badge">Artificial Intelligence Enthusiast</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-      }
-    </style>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-  </head>
+    <section id="personal-life" class="section">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <h2>Personal Snapshot</h2>
+          <p>Core details that keep everything grounded.</p>
+        </div>
+        <div class="grid cards-3">
+          <article class="glass-card" data-reveal>
+            <h3>Birthdate</h3>
+            <p>2010 | September 8</p>
+          </article>
+          <article class="glass-card" data-reveal>
+            <h3>Contact</h3>
+            <p>krispandeya@triyog.edu.np</p>
+            <p>+977-9861397082</p>
+          </article>
+          <article class="glass-card" data-reveal>
+            <h3>Location</h3>
+            <p>Samakhusi, Kathmandu, Nepal</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-  </body>
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <h2>Experience</h2>
+          <p>Leadership roles, academic contributions, and impactful initiatives.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item" data-reveal>
+            <h3>Student – Triyog High School</h3>
+            <span>Apr 2017 – Present · Kathmandu, Nepal</span>
+            <p>Triyog High School | Kathmandu, Bāgmatī, Nepal</p>
+          </div>
+          <div class="timeline-item" data-reveal>
+            <h3>Vice President of Public Relations – Triyog Gavel Club</h3>
+            <span>Sep 2025 – Present</span>
+            <p>Public Speaking, Public Relations, Public Affairs</p>
+          </div>
+          <div class="timeline-item" data-reveal>
+            <h3>Head of IT – Triyog Model United Nations 4.0</h3>
+            <span>Sep 2025</span>
+            <p>IT Leadership, Graphic Design, Newsletter Design, Newsletter Production, Router Configuration, Model United Nations, Information Technology</p>
+          </div>
+          <div class="timeline-item" data-reveal>
+            <h3>Executive Committee – Triyog Photography & Journalism Club</h3>
+            <span>May 2024 – Apr 2025</span>
+            <p>Team Leadership, Cross-Organization Collaboration, Interview Preparation, Journalism</p>
+          </div>
+          <div class="timeline-item" data-reveal>
+            <h3>Executive Committee – Triyog ECO Club</h3>
+            <span>May 2024 – Apr 2025</span>
+            <p>Interview with the Prime Minister, FOZ Drama Competition, Animal Feeding at the Central Zoo, Member at Friends of the Zoo. Team Leadership, Interview Preparation, Wildlife Education, Bird Watching, Cross-Organization Collaboration</p>
+          </div>
+          <div class="timeline-item" data-reveal>
+            <h3>Executive Committee – Triyog Makerspace Club</h3>
+            <span>May 2023 – Apr 2024</span>
+            <p>Exhibitor – Southwestern Science Exhibition; Exhibitor – Trinity Inter College SciTech Exhibition-cum-Competition; Healing Paila; Punchu वाणी; Developed a Cannon; VayuDrishti+. Team Leadership, Problem Solving, Exhibition Stands, Research Skills, Critical Thinking, Cross-Organization Collaboration
+</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <h2>Education</h2>
+          <p>Academic milestones and co-curricular achievements.</p>
+        </div>
+        <div class="grid cards-2">
+          <article class="glass-card" data-reveal>
+            <h3>Triyog High School</h3>
+            <p>➜ Grades 1–9 (Apr 2017 – Present)</p> <br>
+            <p>➜ Grade VIII - First Unit Test - Secured the 25th Position</p><br>
+            <p>➜ Half Yearly Examination - Secured the 16th Position</p><br>
+            <p>➜ Pre-Qualifying Examination - Secured the 12th Position</p><br>
+            <p>➜ Pre-Basic Education Examination - Secured the 11th Position</p><br>
+            <p>➜ Basic Education Examination - Secured the 9th Position</p><br>
+            <p>➜ Grade IX - First Unit Test - Secured the 27th Position </p><br>
+            <p>➜ Half Yearly Examination - Secured the 18th Position </p><br>
+            <p>➜ Second Unit Test - Secured the 14th Position </p>
+          </article>
+          <article class="glass-card" data-reveal>
+            <h3>Activities & Clubs</h3>
+            <p>➜ The Duke of Edinburgh’s International Award</p><br>
+            <p>➜ The School Enterprise Challenge</p><br>
+            <p>➜ Triyog Gavel Club</p><br>
+            <p>➜ Triyog Photography & Journalism Club</p><br>
+            <p>➜ Triyog ECO Club</p><br>
+            <p>➜ Triyog Makerspace Club</p><br>
+            <p>➜ Triyog Literary Club </p>
+          </article>
+          <article class="glass-card" data-reveal>
+            <h3>Competitions</h3>
+            <p>➜ Model United Nations</p><br>
+            <p>➜ World Scholars Cup</p><br>
+            <p>➜ Debate Contests</p><br>
+            <p>➜ Dance Competitions</p><br>
+            <p>➜ Quiz Competitions</p><br>
+            <p>➜ Spelling Bees</p><br>
+            <p>➜ Essay Writing</p>
+          </article>
+          <article class="glass-card" data-reveal>
+            <h3>Subjects</h3>
+            <p>➜ English Language and Literature</p><br>
+            <p>➜ Nepali Language & Literature </p><br>
+            <p>➜ Science & Technology </p><br>
+            <p>➜ Compulsory Mathematics </p><br>
+            <p>➜ Optional Mathematics </p><br>
+            <p>➜ Social Studies</p><br>
+            <p>➜ Computer Science</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="section">
+      <div class="container">
+      <div class="section-heading" data-reveal>
+        <h2>Licenses & Certifications</h2>
+        <p>Continuous learning across AI, technology, and social impact.</p>
+      </div>
+
+      <div class="subsection" data-reveal>
+        <h3>Google Certifications</h3>
+        <div class="grid cards-3">
+        <article class="glass-card" data-reveal>
+        <h4>1) Gemini for Data Scientists and Analysts | <a href="https://www.cloudskillsboost.google/public_profiles/299f5f2a-8dda-451e-96fd-2cbbb9690571/badges/17320775?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share">View Credential</a></h4> <br>
+        <h4>2) Gen AI Agents: Transform Your Organization | <a href="https://www.cloudskillsboost.google/public_profiles/299f5f2a-8dda-451e-96fd-2cbbb9690571/badges/17825072?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share">View Credential</a></h4><br>
+        <h4>3) Gen AI Apps: Transform Your Work | <a href="https://www.cloudskillsboost.google/public_profiles/299f5f2a-8dda-451e-96fd-2cbbb9690571/badges/17825021?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share">View Credential</a></h4><br>
+        <h4>4) Gen AI: Beyond the Chatbot | <a href="https://www.cloudskillsboost.google/public_profiles/299f5f2a-8dda-451e-96fd-2cbbb9690571/badges/17596746?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share">View Credential</a></h4><br>
+        <h4>5) Gen AI: Navigate the Landscape | <a href="https://www.cloudskillsboost.google/public_profiles/299f5f2a-8dda-451e-96fd-2cbbb9690571/badges/17824724?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share">View Credential</a></h4><br>
+        <h4>6) Gen AI: Unlock Foundational Concepts | <a href="https://www.cloudskillsboost.google/public_profiles/299f5f2a-8dda-451e-96fd-2cbbb9690571/badges/17824643?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share">View Credential</a></h4><br>
+        <h4>7) Google Cloud Essentials | <a href="https://www.cloudskillsboost.google/public_profiles/299f5f2a-8dda-451e-96fd-2cbbb9690571/badges/17363314?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share">View Credential</a></h4><br>
+        <h4>8) Introduction to Responsible AI | <a href="https://www.cloudskillsboost.google/public_profiles/299f5f2a-8dda-451e-96fd-2cbbb9690571/badges/17445079?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share">View Credential</a></h4><br>
+        <h4>9) Prompt Design in Vertex AI | <a href="https://www.cloudskillsboost.google/public_profiles/299f5f2a-8dda-451e-96fd-2cbbb9690571/badges/17575789?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share">View Credential</a></h4><br>
+        <h4>10) Responsible AI: Applying AI Principles with Google Cloud | <a href="https://www.cloudskillsboost.google/public_profiles/299f5f2a-8dda-451e-96fd-2cbbb9690571/badges/17577030?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share">View Credential</a></h4><br>
+        <h4>11) Introduction to Generative AI | <a href="https://www.cloudskillsboost.google/public_profiles/299f5f2a-8dda-451e-96fd-2cbbb9690571/badges/12610897?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share">View Credential</a></h4><br>
+        <h4>12) Introduction to Image Generation | <a href="https://www.cloudskillsboost.google/public_profiles/299f5f2a-8dda-451e-96fd-2cbbb9690571/badges/12611034?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share">View Credential</a></h4><br>
+        <h4>13) Introduction to Large Language Models | <a href="https://www.cloudskillsboost.google/public_profiles/299f5f2a-8dda-451e-96fd-2cbbb9690571/badges/12610985?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share">View Credential</a></h4>
+        </article>
+        </div>
+      </div>
+
+      <div class="subsection" data-reveal>
+        <h3>Programiz Certifications</h3>
+        <div class="grid cards-3">
+        <article class="glass-card" data-reveal>
+        <h4>Canva – AI in the Classroom | <a href="https://example.com/canva/ai-classroom">View Credential</a></h4>
+        </article>
+        </div>
+      </div>
+
+      <div class="subsection" data-reveal>
+        <h3>Canva Certifications</h3>
+        <div class="grid cards-3">
+        <article class="glass-card" data-reveal>
+        <h4>Canva – AI in the Classroom | <a href="https://example.com/canva/ai-classroom">View Credential</a></h4>     
+        </article>
+        </div>
+      </div>
+
+      <div class="subsection" data-reveal>
+        <h3>ESL Certifications</h3>
+        <div class="grid cards-3">
+        <article class="glass-card" data-reveal>
+        <h4>Canva – AI in the Classroom | <a href="https://example.com/canva/ai-classroom">View Credential</a></h4>          
+        </article>
+        </div>
+      <div class="subsection" data-reveal>
+        <h3>UN Certifications</h3>
+        <div class="grid cards-3">
+        <article class="glass-card" data-reveal>
+        <h4>Canva – AI in the Classroom | <a href="https://example.com/canva/ai-classroom">View Credential</a></h4>
+        </article>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <h2>Projects</h2>
+          <p>Innovations with a strong focus on sustainability and automation.</p>
+        </div>
+        <div class="grid cards-3">
+          <article class="glass-card" data-reveal>
+            <h3>Healing Paila</h3>
+            <p>Dec 2023 – Feb 2024</p>
+            <p>A porous block designed for sustainable drainage and water permeability.</p>
+          </article>
+          <article class="glass-card" data-reveal>
+            <h3>Punchu वाणी</h3>
+            <p>Dec 2023 – Feb 2024</p>
+            <p>Automatic bell system for school scheduling automation.</p>
+          </article>
+          <article class="glass-card" data-reveal>
+            <h3>VayuDrishti+</h3>
+            <p>2023 – Triyog High School</p>
+            <p>Environmental innovation project showcased at science exhibitions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="volunteering" class="section">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <h2>Volunteering</h2>
+          <p>Supporting communities and building together.</p>
+        </div>
+        <article class="glass-card" data-reveal>
+          <h3>Student Volunteer – Triyog High School</h3>
+          <p>Dec 2024 · 1 mo</p>
+          <p>Contributed to Winter Camp 2024 by assisting with activities and supporting participants.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <h2>Skills</h2>
+          <p>Core strengths that define my workflow.</p>
+        </div>
+        <div class="skill-marquee" data-reveal>
+          <div class="skill-track">
+            <span>Model United Nations</span>
+            <span>Team Leadership</span>
+            <span>Climate Change</span>
+            <span>Thought Leadership</span>
+            <span>Disaster Risk Reduction</span>
+            <span>Team Leadership</span>
+            <span>Public Speaking</span>
+            <span>Public Relations</span>
+            <span>Public Affairs</span>
+            <span>Cross_Organisation Collaboration</span>
+            <span>Interview Preparation</span>
+            <span>Wildlife Education</span>
+            <span>Bird Watching</span>
+            <span>Critical Thinking</span>
+            <span>English as a Second Language</span>
+
+          </div>
+          <div class="skill-track" aria-hidden="true">
+            <span>IT Leadership</span>
+            <span>Google Cloud Platform</span>
+            <span>Canva</span>
+            <span>Artificial Intelligence</span>
+            <span>Python</span>
+            <span>NumPY</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>SQL</span>
+            <span>Publishing</span>
+            <span>Exhibition Stands</span>
+            <span>Problem Solving</span>
+            <span>Research Skills</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <h2>Publications</h2>
+          <p>Highlights from editorial and MUN experiences.</p>
+        </div>
+        <div class="list-card" data-reveal>
+          <ul>
+            <li><span>TMUN Publication 1</span><span>Coming soon</span></li>
+            <li><span>TMUN Publication 2</span><span>Coming soon</span></li>
+            <li><span>TMUN Publication 3</span><span>Coming soon</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="awards" class="section">
+      <div class="container">
+      <div class="section-heading" data-reveal>
+        <h2>Honors & Awards</h2>
+        <p>Recognition across academics, leadership, and innovation.</p>
+      </div>
+      <div class="grid cards-3">
+        <article class="glass-card" data-reveal>
+        <h3>Academic Excellence</h3>
+        <ul>
+          <li>➜ <b>Certificate of Merit</b> — Triyog High School (Nov 2025) Recognized for excellence in the Half Yearly Examination; ranked in the Top 20.</li> <br>
+          <li>➜ <b>Certificate of Merit</b> (BEE Batch 2081) — Triyog High School (May 2025) Achieved the highest GPA in Nepali, HPCA, Hamro Tokha, and Science & Technology; Top 10 overall.</li> <br>
+          <li>➜ <b>Certificate of Merit</b> — Triyog High School (Sep 2024) Recognized for excellence in the Half Yearly Examination; ranked in the Top 20.</li> <br>
+          <li>➜ <b>Certificate of Merit</b> — Triyog High School (December 2025) Recognized for excellence in the Second Unit Test; ranked in the Top 20.</li> 
+        </ul>
+        </article>
+        <article class="glass-card" data-reveal>
+        <h3>Leadership & Service</h3>
+        <ul>
+          <li>➜ <b>Certificate of Appreciation</b> — Triyog Model United Nations 4.0 (Sep 2025) Served as Head of Information Technology in the Organizing Committee (Sep 19–22, 2025).</li ><br>
+          <li>➜ <b>Token of Appreciation</b> — Triyog Model United Nations 4.0 (Sep 2025) In recognition of contributions as a member of the Organizing Committee. </li><br>
+          <li>➜ <b> Vice President, Public Relations Appointment </b> - Triyog Gavel Club (Sep 2025)</li><br>
+          <li>➜ <b> Treasurer </b> - Triyog ECO Club</li><br>
+          <li>➜<b> Executive Committee Member </b> - Triyog Makerspace Club</li><br>
+          <li>➜<b> Volunteering Certificate </b> - Sports Week</li>
+        </ul>
+        </article>
+        <article class="glass-card" data-reveal>
+        <h3>Debate, Quiz and Communication</h3>
+        <ul>
+          <li><b>First Position</b> – Inter House Nepali Debate Competition (Jul 2025) </li><br>
+          <li><b>First Position</b> – Inter House Nepali Debate Competition (Sep 2023) </li><br>
+          <li><b>Third Position</b> – Inter House Quiz Competition (Sep 2025) </li><br>
+          <li><b>Second Position</b> – Inter House Quiz Competition (Aug 2023) </li><br>
+          <li><b>Second Position</b> – Inter House Quiz Competition (Aug 2018) </li><br>
+          <li><b>First Position</b> – Inter House Quiz Competition (Oct 2019) </li>
+        </ul>
+        </article>
+        <article class="glass-card" data-reveal>
+        <h3>Science, STEM & Innovation</h3>
+        <ul>
+          <li><b>3rd Position</b> – Inter-School Science Exhibition (Healing Paila) (Feb 2024)</li><br>
+          <li><b>Certificate of Appreciation</b> – Southwestern State College - Inter-School Science Exhibition (Punchu वाणी) (Feb 2024)</li><br>
+          <li><b>Certificate of Appreciation</b> – Southwestern State College - Inter-School Science Exhibition (Healing Paila) (Feb 2024)</li><br>
+          <li><b> Letter of Appreciation </b> - Trinity International College (Jan 2024) - Participation in the 13th Trinity Inter-College SciTech Exhibition-cum-Competition 2024. </li> <br>
+          <li><b> Certificate of Participation</b> - IEEE Pulchowk Campus Student Branch (May 2025) Completed “Transistor Power: Night Light Challenge” at Stemfluence: Think, Tinker, Thrive. </li>     
+        </ul>
+        </article>
+        <article class="glass-card" data-reveal>
+        <h3>Model United Nations & Global Programs</h3>
+        <ul>
+          <li>Delegate Awards and recognitions</li>
+          <li>Global leadership and diplomacy initiatives</li>
+        </ul>
+        </article>
+        <article class="glass-card" data-reveal>
+        <h3>Courses and Special Programs</h3>
+        <ul>
+          <li>Focused training and enrichment programs</li>
+          <li>Workshops and academic intensives</li>
+        </ul>
+        </article>
+        <article class="glass-card" data-reveal>
+        <h3>Model United Nations & Global Programs</h3>
+        <ul>
+          <li>Delegate Awards and recognitions</li>
+          <li>Global leadership and diplomacy initiatives</li>
+        </ul>
+        </article>
+      </div>
+      </div>
+    </section>
+
+    <section id="languages" class="section">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <h2>Languages</h2>
+          <p>Communication across cultures and communities.</p>
+        </div>
+        <div class="grid cards-4">
+          <article class="glass-card" data-reveal>
+            <h3>Dutch</h3>
+          </article>
+          <article class="glass-card" data-reveal>
+            <h3>English</h3>
+          </article>
+          <article class="glass-card" data-reveal>
+            <h3>Hindi</h3>
+          </article>
+          <article class="glass-card" data-reveal>
+            <h3>Nepali</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <h3>Let’s build something meaningful.</h3>
+        <p>Reach out for collaborations, projects, or leadership opportunities.</p>
+      </div>
+      <a class="primary-btn" href="mailto:krispandeya@triyog.edu.np">Get in touch</a>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+  <script src="script.js"></script>
+</body>
 </html>
