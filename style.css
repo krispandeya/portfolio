@@ -8,12 +8,13 @@
   color-scheme: light;
   --bg: 0 0% 98%;
   --fg: 230 30% 12%;
-  --card: 0 0% 100%;
+  --card: 200 100% 92%; /* Sky Blue Tint */
   --border: 230 20% 90%;
   --muted: 230 20% 55%;
   --primary: 262 83% 58%;
   --accent: 330 81% 60%;
   --glow: 190 95% 39%;
+  --highlight: 262 83% 58%; /* Purple Highlight */
   --radius: 18px;
   --shadow: 0 20px 40px -24px rgba(22, 17, 40, 0.25);
 }
@@ -25,6 +26,7 @@ body.dark {
   --card: 240 8% 10%;
   --border: 240 8% 22%;
   --muted: 240 8% 70%;
+  --highlight: 51 100% 50%; /* Gold Highlight */
 }
 
 body {
@@ -62,7 +64,28 @@ ul {
     radial-gradient(circle at 20% 20%, hsla(262, 83%, 58%, 0.2), transparent 45%),
     radial-gradient(circle at 80% 30%, hsla(330, 81%, 60%, 0.18), transparent 50%),
     radial-gradient(circle at 50% 80%, hsla(190, 95%, 39%, 0.15), transparent 50%);
+  background-size: 150% 150%;
+  animation: move-mesh 20s ease-in-out infinite alternate;
   z-index: -2;
+}
+
+@keyframes move-mesh {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+#universe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+  pointer-events: none;
 }
 
 .noise-overlay {
@@ -172,6 +195,17 @@ ul {
   color: hsl(var(--muted));
 }
 
+.subsection {
+  margin-top: 60px;
+}
+
+.subsection h3 {
+  font-size: 1.75rem;
+  color: hsl(var(--highlight));
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
 .hero {
   padding-top: 60px;
 }
@@ -220,7 +254,6 @@ ul {
   padding: 16px;
   border-radius: var(--radius);
   background: hsla(var(--card), 0.7);
-  border: 1px solid hsl(var(--border));
   box-shadow: var(--shadow);
 }
 
@@ -232,9 +265,16 @@ ul {
 .profile-card {
   border-radius: calc(var(--radius) + 6px);
   background: hsla(var(--card), 0.75);
-  border: 1px solid hsl(var(--border));
   padding: 24px;
   box-shadow: var(--shadow);
+}
+
+.profile-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto;
 }
 
 .profile-details {
@@ -279,22 +319,107 @@ ul {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.glass-card {
+.glass-card,
+.stat-card,
+.profile-card,
+.timeline-item,
+.list-card,
+.skill-marquee {
   padding: 22px;
   border-radius: var(--radius);
   background: hsla(var(--card), 0.7);
-  border: 1px solid hsl(var(--border));
-  box-shadow: var(--shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid hsl(var(--highlight));
+  box-shadow: 0 0 12px hsla(var(--highlight), 0.3), var(--shadow);
+  transition: transform 0.1s ease-out, box-shadow 0.3s ease, border-color 0.3s ease; /* Faster transform for mouse tracking */
+  transform-style: preserve-3d; /* Enable 3D transforms */
+  position: relative;
+  overflow: hidden;
+  --spotlight-color: hsla(var(--highlight), 0.15);
 }
 
-.glass-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 24px 50px -28px rgba(22, 17, 40, 0.35);
+/* Spotlight Effect */
+.glass-card::after,
+.stat-card::after,
+.profile-card::after,
+.timeline-item::after,
+.list-card::after,
+.skill-marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    600px circle at var(--mouse-x) var(--mouse-y),
+    var(--spotlight-color),
+    transparent 100%
+  );
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+  z-index: 2;
 }
 
-.glass-card h4 a {
-  color: #007bff;
+.glass-card ul,
+.list-card ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.glass-card li,
+.list-card li {
+  margin-bottom: 5px;
+}
+
+.glass-card:hover::after,
+.stat-card:hover::after,
+.profile-card:hover::after,
+.timeline-item:hover::after,
+.list-card:hover::after,
+.skill-marquee:hover::after {
+  opacity: 1;
+}
+
+/* Specific styling for Awards section */
+#awards .glass-card {
+  --spotlight-color: hsla(51, 100%, 50%, 0.2); /* Gold */
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 0.6s linear;
+  pointer-events: none;
+  z-index: 3;
+}
+
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Base hover state is handled by JS now for position, but we keep shadow */
+.glass-card:hover, .stat-card:hover, .profile-card:hover, .timeline-item:hover, .list-card:hover, .skill-marquee:hover { 
+  box-shadow: 0 0 20px hsla(var(--highlight), 0.6), 0 24px 50px -28px rgba(22, 17, 40, 0.45);
+  border-color: hsl(var(--highlight));
+  /* Transform is handled by JS */
+}
+
+/* Specific gold color for Awards section cards when hovered */
+#awards .glass-card:hover {
+  background: linear-gradient(135deg, hsla(51, 100%, 50%, 0.1), hsla(var(--card), 0.7));
+  border-color: #ffd700;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4), 0 24px 50px -28px rgba(22, 17, 40, 0.35);
+}
+
+.glass-card a {
+  color: #007bff !important;
 }
 
 .timeline {
@@ -307,7 +432,6 @@ ul {
 .timeline-item {
   padding: 16px 20px;
   background: hsla(var(--card), 0.65);
-  border: 1px solid hsl(var(--border));
   border-radius: var(--radius);
   position: relative;
 }
@@ -334,7 +458,6 @@ ul {
 .skill-marquee {
   overflow: hidden;
   border-radius: var(--radius);
-  border: 1px solid hsl(var(--border));
   background: hsla(var(--card), 0.6);
   padding: 18px 0;
 }
@@ -361,7 +484,6 @@ ul {
   padding: 24px;
   border-radius: var(--radius);
   background: hsla(var(--card), 0.7);
-  border: 1px solid hsl(var(--border));
 }
 
 .list-card li {
@@ -446,4 +568,15 @@ ul {
     flex-direction: column;
     align-items: stretch;
   }
+}
+
+/* Hide PDF scrollbars by pushing them out of view */
+.glass-card embed {
+  width: calc(100% + 20px) !important;
+  height: calc(100% + 20px) !important;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.glass-card embed::-webkit-scrollbar {
+  display: none;
 }

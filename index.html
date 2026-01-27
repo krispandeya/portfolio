@@ -12,11 +12,12 @@
 </head>
 <body>
   <div class="background-mesh"></div>
+  <canvas id="universe"></canvas>
   <div class="noise-overlay"></div>
 
   <header class="site-header">
     <div class="container header-content">
-      <a class="brand" href="#introduction">
+      <a class="brand" href="#">
         <img src="pfp.jpeg" alt="Kris Pandeya logo">
         <span>Kris Pandeya</span>
       </a>
@@ -42,7 +43,6 @@
     <section id="introduction" class="section hero">
       <div class="container hero-grid">
         <div class="hero-content" data-reveal>
-          <p class="eyebrow">Student · Gavelier · Leader</p>
           <h1>Building thoughtful tech, leading with purpose.</h1>
           <p class="lead">
             I’m Kris Pandeya from Kathmandu, Nepal — A student passionate about learning, growth, and embracing new challenges who values consistency, curiosity, and striving for excellence with purpose and focus.
@@ -64,10 +64,9 @@
         </div>
         <div class="hero-visual" data-reveal>
           <div class="profile-card">
-            <img src="assets/profile.svg" alt="Kris Pandeya portrait">
+            <img src="pfp.jpeg" alt="Kris Pandeya portrait">
             <div class="profile-details">
               <h2>Kris Pandeya</h2>
-              <p>Technology · Public Speaking · Design</p>
               <div class="badge-row">
                 <span class="badge">Student</span>
                 <span class="badge">Gavelier</span>
@@ -157,45 +156,53 @@
         <div class="grid cards-2">
           <article class="glass-card" data-reveal>
             <h3>Triyog High School</h3>
-            <p>➜ Grades 1–9 (Apr 2017 – Present)</p> <br>
-            <p>➜ Grade VIII - First Unit Test - Secured the 25th Position</p><br>
-            <p>➜ Half Yearly Examination - Secured the 16th Position</p><br>
-            <p>➜ Pre-Qualifying Examination - Secured the 12th Position</p><br>
-            <p>➜ Pre-Basic Education Examination - Secured the 11th Position</p><br>
-            <p>➜ Basic Education Examination - Secured the 9th Position</p><br>
-            <p>➜ Grade IX - First Unit Test - Secured the 27th Position </p><br>
-            <p>➜ Half Yearly Examination - Secured the 18th Position </p><br>
-            <p>➜ Second Unit Test - Secured the 14th Position </p>
+            <ul>
+                <li>Grades 1–9 (Apr 2017 – Present)</li>
+                <li>Grade VIII - First Unit Test - Secured the 25th Position</li>
+                <li>Half Yearly Examination - Secured the 16th Position</li>
+                <li>Pre-Qualifying Examination - Secured the 12th Position</li>
+                <li>Pre-Basic Education Examination - Secured the 11th Position</li>
+                <li>Basic Education Examination - Secured the 9th Position</li>
+                <li>Grade IX - First Unit Test - Secured the 27th Position</li>
+                <li>Half Yearly Examination - Secured the 18th Position</li>
+                <li>Second Unit Test - Secured the 14th Position</li>
+            </ul>
           </article>
           <article class="glass-card" data-reveal>
             <h3>Activities & Clubs</h3>
-            <p>➜ The Duke of Edinburgh’s International Award</p><br>
-            <p>➜ The School Enterprise Challenge</p><br>
-            <p>➜ Triyog Gavel Club</p><br>
-            <p>➜ Triyog Photography & Journalism Club</p><br>
-            <p>➜ Triyog ECO Club</p><br>
-            <p>➜ Triyog Makerspace Club</p><br>
-            <p>➜ Triyog Literary Club </p>
+            <ul>
+                <li>The Duke of Edinburgh’s International Award</li>
+                <li>The School Enterprise Challenge</li>
+                <li>Triyog Gavel Club</li>
+                <li>Triyog Photography & Journalism Club</li>
+                <li>Triyog ECO Club</li>
+                <li>Triyog Makerspace Club</li>
+                <li>Triyog Literary Club</li>
+            </ul>
           </article>
           <article class="glass-card" data-reveal>
             <h3>Competitions</h3>
-            <p>➜ Model United Nations</p><br>
-            <p>➜ World Scholars Cup</p><br>
-            <p>➜ Debate Contests</p><br>
-            <p>➜ Dance Competitions</p><br>
-            <p>➜ Quiz Competitions</p><br>
-            <p>➜ Spelling Bees</p><br>
-            <p>➜ Essay Writing</p>
+            <ul>
+                <li>Model United Nations</li>
+                <li>World Scholars Cup</li>
+                <li>Debate Contests</li>
+                <li>Dance Competitions</li>
+                <li>Quiz Competitions</li>
+                <li>Spelling Bees</li>
+                <li>Essay Writing</li>
+            </ul>
           </article>
           <article class="glass-card" data-reveal>
             <h3>Subjects</h3>
-            <p>➜ English Language and Literature</p><br>
-            <p>➜ Nepali Language & Literature </p><br>
-            <p>➜ Science & Technology </p><br>
-            <p>➜ Compulsory Mathematics </p><br>
-            <p>➜ Optional Mathematics </p><br>
-            <p>➜ Social Studies</p><br>
-            <p>➜ Computer Science</p>
+            <ul>
+                <li>English Language and Literature</li>
+                <li>Nepali Language & Literature</li>
+                <li>Science & Technology</li>
+                <li>Compulsory Mathematics</li>
+                <li>Optional Mathematics</li>
+                <li>Social Studies</li>
+                <li>Computer Science</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -255,37 +262,230 @@
 
       <div class="subsection" data-reveal>
         <h3>Programiz Certifications</h3>
-        <div class="grid cards-3">
-        <article class="glass-card" data-reveal>
-        <h4>Canva – AI in the Classroom | <a href="https://example.com/canva/ai-classroom">View Credential</a></h4>
-        </article>
+        <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
+          <article class="glass-card" data-reveal>
+            <div style="min-height: 60px; margin-bottom: 12px; display: flex; flex-direction: column; justify-content: flex-start;">
+              <h4 style="margin: 0; font-size: 1rem; line-height: 1.3;">Become a Python Master</h4>
+              <p style="margin: 4px 0 0 0; font-size: 0.9rem; opacity: 0.8;">Issued Dec 2025</p>
+            </div>
+            <div style="position: relative; width: 100%; aspect-ratio: 1.42; margin-bottom: 12px; border-radius: 8px; overflow: hidden; background: white;">
+              <embed src="Programiz/Become a Python Master.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" width="100%" height="100%" style="pointer-events: none; transform: scale(1.25); transform-origin: top center;">
+              <a href="Programiz/Become a Python Master.pdf" target="_blank" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></a>
+            </div>
+            <p><a href="#">Verify Credential</a></p>
+          </article>
+          <article class="glass-card" data-reveal>
+            <div style="min-height: 60px; margin-bottom: 12px; display: flex; flex-direction: column; justify-content: flex-start;">
+              <h4 style="margin: 0; font-size: 1rem; line-height: 1.3;">Practice: Python Intermediate</h4>
+              <p style="margin: 4px 0 0 0; font-size: 0.9rem; opacity: 0.8;">Issued Dec 2025</p>
+            </div>
+            <div style="position: relative; width: 100%; aspect-ratio: 1.42; margin-bottom: 12px; border-radius: 8px; overflow: hidden; background: white;">
+              <embed src="Programiz/Practice_ Python Intermediate.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" width="100%" height="100%" style="pointer-events: none; transform: scale(1.25); transform-origin: top center;">
+              <a href="Programiz/Practice_ Python Intermediate.pdf" target="_blank" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></a>
+            </div>
+            <p><a href="#">Verify Credential</a></p>
+          </article>
+          <article class="glass-card" data-reveal>
+            <div style="min-height: 60px; margin-bottom: 12px; display: flex; flex-direction: column; justify-content: flex-start;">
+              <h4 style="margin: 0; font-size: 1rem; line-height: 1.3;">Python Interview Questions</h4>
+              <p style="margin: 4px 0 0 0; font-size: 0.9rem; opacity: 0.8;">Issued Dec 2025</p>
+            </div>
+            <div style="position: relative; width: 100%; aspect-ratio: 1.42; margin-bottom: 12px; border-radius: 8px; overflow: hidden; background: white;">
+              <embed src="Programiz/Python Interview Questions.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" width="100%" height="100%" style="pointer-events: none; transform: scale(1.25); transform-origin: top center;">
+              <a href="Programiz/Python Interview Questions.pdf" target="_blank" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></a>
+            </div>
+            <p><a href="#">Verify Credential</a></p>
+          </article>
+          <article class="glass-card" data-reveal>
+            <div style="min-height: 60px; margin-bottom: 12px; display: flex; flex-direction: column; justify-content: flex-start;">
+              <h4 style="margin: 0; font-size: 1rem; line-height: 1.3;">Learn Recursion with Python</h4>
+              <p style="margin: 4px 0 0 0; font-size: 0.9rem; opacity: 0.8;">Issued Nov 2025</p>
+            </div>
+            <div style="position: relative; width: 100%; aspect-ratio: 1.42; margin-bottom: 12px; border-radius: 8px; overflow: hidden; background: white;">
+              <embed src="Programiz/Learn Recursion with Python.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" width="100%" height="100%" style="pointer-events: none; transform: scale(1.25); transform-origin: top center;">
+              <a href="Programiz/Learn Recursion with Python.pdf" target="_blank" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></a>
+            </div>
+            <p><a href="#">Verify Credential</a></p>
+          </article>
+          <article class="glass-card" data-reveal>
+            <div style="min-height: 60px; margin-bottom: 12px; display: flex; flex-direction: column; justify-content: flex-start;">
+              <h4 style="margin: 0; font-size: 1rem; line-height: 1.3;">Python NumPy for Data Science</h4>
+              <p style="margin: 4px 0 0 0; font-size: 0.9rem; opacity: 0.8;">Issued Nov 2025</p>
+            </div>
+            <div style="position: relative; width: 100%; aspect-ratio: 1.42; margin-bottom: 12px; border-radius: 8px; overflow: hidden; background: white;">
+              <embed src="Programiz/Python Numpy for Data Science.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" width="100%" height="100%" style="pointer-events: none; transform: scale(1.25); transform-origin: top center;">
+              <a href="Programiz/Python Numpy for Data Science.pdf" target="_blank" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></a>
+            </div>
+            <p><a href="#">Verify Credential</a></p>
+          </article>
+          <article class="glass-card" data-reveal>
+            <div style="min-height: 60px; margin-bottom: 12px; display: flex; flex-direction: column; justify-content: flex-start;">
+              <h4 style="margin: 0; font-size: 1rem; line-height: 1.3;">Learn Python Intermediate</h4>
+              <p style="margin: 4px 0 0 0; font-size: 0.9rem; opacity: 0.8;">Issued Aug 2025</p>
+            </div>
+            <div style="position: relative; width: 100%; aspect-ratio: 1.42; margin-bottom: 12px; border-radius: 8px; overflow: hidden; background: white;">
+              <embed src="Programiz/Learn Python Intermediate.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" width="100%" height="100%" style="pointer-events: none; transform: scale(1.25); transform-origin: top center;">
+              <a href="Programiz/Learn Python Intermediate.pdf" target="_blank" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></a>
+            </div>
+            <p><a href="#">Verify Credential</a></p>
+          </article>
+          <article class="glass-card" data-reveal>
+            <div style="min-height: 60px; margin-bottom: 12px; display: flex; flex-direction: column; justify-content: flex-start;">
+              <h4 style="margin: 0; font-size: 1rem; line-height: 1.3;">Practice: Python Basics</h4>
+              <p style="margin: 4px 0 0 0; font-size: 0.9rem; opacity: 0.8;">Issued Aug 2025</p>
+            </div>
+            <div style="position: relative; width: 100%; aspect-ratio: 1.42; margin-bottom: 12px; border-radius: 8px; overflow: hidden; background: white;">
+              <embed src="Programiz/Practice_ Python Basics.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" width="100%" height="100%" style="pointer-events: none; transform: scale(1.25); transform-origin: top center;">
+              <a href="Programiz/Practice_ Python Basics.pdf" target="_blank" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></a>
+            </div>
+            <p><a href="#">Verify Credential</a></p>
+          </article>
+          <article class="glass-card" data-reveal>
+            <div style="min-height: 60px; margin-bottom: 12px; display: flex; flex-direction: column; justify-content: flex-start;">
+              <h4 style="margin: 0; font-size: 1rem; line-height: 1.3;">Learn Python Basics</h4>
+              <p style="margin: 4px 0 0 0; font-size: 0.9rem; opacity: 0.8;">Issued Jul 2025</p>
+            </div>
+            <div style="position: relative; width: 100%; aspect-ratio: 1.42; margin-bottom: 12px; border-radius: 8px; overflow: hidden; background: white;">
+              <embed src="Programiz/Learn Python Basics.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" width="100%" height="100%" style="pointer-events: none; transform: scale(1.25); transform-origin: top center;">
+              <a href="Programiz/Learn Python Basics.pdf" target="_blank" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></a>
+            </div>
+            <p><a href="#">Verify Credential</a></p>
+          </article>
+          <article class="glass-card" data-reveal>
+            <div style="min-height: 60px; margin-bottom: 12px; display: flex; flex-direction: column; justify-content: flex-start;">
+              <h4 style="margin: 0; font-size: 1rem; line-height: 1.3;">Learn HTML</h4>
+              <p style="margin: 4px 0 0 0; font-size: 0.9rem; opacity: 0.8;">Issued May 2025</p>
+            </div>
+            <div style="position: relative; width: 100%; aspect-ratio: 1.42; margin-bottom: 12px; border-radius: 8px; overflow: hidden; background: white;">
+              <embed src="Programiz/Certificate - HTML.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" width="100%" height="100%" style="pointer-events: none; transform: scale(1.25); transform-origin: top center;">
+              <a href="Programiz/Certificate - HTML.pdf" target="_blank" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></a>
+            </div>
+            <p><a href="#">Verify Credential</a></p>
+          </article>
+          <article class="glass-card" data-reveal>
+            <div style="min-height: 60px; margin-bottom: 12px; display: flex; flex-direction: column; justify-content: flex-start;">
+              <h4 style="margin: 0; font-size: 1rem; line-height: 1.3;">Learn CSS</h4>
+              <p style="margin: 4px 0 0 0; font-size: 0.9rem; opacity: 0.8;">Issued Aug 2025</p>
+            </div>
+            <div style="position: relative; width: 100%; aspect-ratio: 1.42; margin-bottom: 12px; border-radius: 8px; overflow: hidden; background: white;">
+              <embed src="Programiz/Certificate - CSS.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" width="100%" height="100%" style="pointer-events: none; transform: scale(1.25); transform-origin: top center;">
+              <a href="Programiz/Certificate - CSS.pdf" target="_blank" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></a>
+            </div>
+            <p><a href="#">Verify Credential</a></p>
+          </article>
         </div>
       </div>
 
       <div class="subsection" data-reveal>
         <h3>Canva Certifications</h3>
-        <div class="grid cards-3">
-        <article class="glass-card" data-reveal>
-        <h4>Canva – AI in the Classroom | <a href="https://example.com/canva/ai-classroom">View Credential</a></h4>     
-        </article>
+        <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
+          <article class="glass-card" data-reveal>
+            <div style="min-height: 60px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: flex-start;">
+              <div style="display: flex; flex-direction: column;">
+                <h4 style="margin: 0; font-size: 1rem; line-height: 1.3;">AI in the Classroom</h4>
+                <p style="margin: 4px 0 0 0; font-size: 0.9rem; opacity: 0.8;">Issued Aug 2025</p>
+              </div>
+              <img src="Canva/AI In The Classroom - Badge.png" alt="Badge" style="height: 50px; width: auto; object-fit: contain;">
+            </div>
+            <div style="position: relative; width: 100%; aspect-ratio: 1.42; margin-bottom: 12px; border-radius: 8px; overflow: hidden; background: white;">
+              <embed src="Canva/AI In The Classroom.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" width="100%" height="100%" style="pointer-events: none; transform: scale(1.05); transform-origin: top center;">
+              <a href="Canva/AI In The Classroom.pdf" target="_blank" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></a>
+            </div>
+            <p><a href="#">Verify Credential</a></p>
+          </article>
+          <article class="glass-card" data-reveal>
+            <div style="min-height: 60px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: flex-start;">
+              <div style="display: flex; flex-direction: column;">
+                <h4 style="margin: 0; font-size: 1rem; line-height: 1.3;">Canva Essentials</h4>
+                <p style="margin: 4px 0 0 0; font-size: 0.9rem; opacity: 0.8;">Issued Aug 2025</p>
+              </div>
+              <img src="Canva/Canva Essentials - Badge.png" alt="Badge" style="height: 50px; width: auto; object-fit: contain;">
+            </div>
+            <div style="position: relative; width: 100%; aspect-ratio: 1.42; margin-bottom: 12px; border-radius: 8px; overflow: hidden; background: white;">
+              <embed src="Canva/Canva Essentials.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" width="100%" height="100%" style="pointer-events: none; transform: scale(1.05); transform-origin: top center;">
+              <a href="Canva/Canva Essentials.pdf" target="_blank" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></a>
+            </div>
+            <p><a href="#">Verify Credential</a></p>
+          </article>
         </div>
       </div>
 
       <div class="subsection" data-reveal>
         <h3>ESL Certifications</h3>
-        <div class="grid cards-3">
-        <article class="glass-card" data-reveal>
-        <h4>Canva – AI in the Classroom | <a href="https://example.com/canva/ai-classroom">View Credential</a></h4>          
-        </article>
-        </div>
-      <div class="subsection" data-reveal>
-        <h3>UN Certifications</h3>
-        <div class="grid cards-3">
-        <article class="glass-card" data-reveal>
-        <h4>Canva – AI in the Classroom | <a href="https://example.com/canva/ai-classroom">View Credential</a></h4>
-        </article>
+        <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
+          <article class="glass-card" data-reveal>
+            <div style="min-height: 60px; margin-bottom: 12px; display: flex; flex-direction: column; justify-content: flex-start;">
+              <h4 style="margin: 0; font-size: 1rem; line-height: 1.3;">ESL001: Elementary English as a Second Language</h4>
+              <p style="margin: 4px 0 0 0; font-size: 0.9rem; opacity: 0.8;">Issued Aug 2025</p>
+            </div>
+            <div style="position: relative; width: 100%; aspect-ratio: 1.42; margin-bottom: 12px; border-radius: 8px; overflow: hidden; background: white;">
+              <embed src="ESL/ESL001.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" width="100%" height="100%" style="pointer-events: none; transform: scale(1.05); transform-origin: top center;">
+              <a href="ESL/ESL001.pdf" target="_blank" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></a>
+            </div>
+            <p><a href="#">Verify Credential</a></p>
+          </article>
+          <article class="glass-card" data-reveal>
+            <div style="min-height: 60px; margin-bottom: 12px; display: flex; flex-direction: column; justify-content: flex-start;">
+              <h4 style="margin: 0; font-size: 1rem; line-height: 1.3;">ESL002: Intermediate English as a Second Language</h4>
+              <p style="margin: 4px 0 0 0; font-size: 0.9rem; opacity: 0.8;">Issued Aug 2025</p>
+            </div>
+            <div style="position: relative; width: 100%; aspect-ratio: 1.42; margin-bottom: 12px; border-radius: 8px; overflow: hidden; background: white;">
+              <embed src="ESL/ESL002.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" width="100%" height="100%" style="pointer-events: none; transform: scale(1.05); transform-origin: top center;">
+              <a href="ESL/ESL002.pdf" target="_blank" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></a>
+            </div>
+            <p><a href="#">Verify Credential</a></p>
+          </article>
+          <article class="glass-card" data-reveal>
+            <div style="min-height: 60px; margin-bottom: 12px; display: flex; flex-direction: column; justify-content: flex-start;">
+              <h4 style="margin: 0; font-size: 1rem; line-height: 1.3;">ESL003: Upper-Intermediate English as a Second Language</h4>
+              <p style="margin: 4px 0 0 0; font-size: 0.9rem; opacity: 0.8;">Issued Aug 2025</p>
+            </div>
+            <div style="position: relative; width: 100%; aspect-ratio: 1.42; margin-bottom: 12px; border-radius: 8px; overflow: hidden; background: white;">
+              <embed src="ESL/ESL003.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" width="100%" height="100%" style="pointer-events: none; transform: scale(1.05); transform-origin: top center;">
+              <a href="ESL/ESL003.pdf" target="_blank" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></a>
+            </div>
+            <p><a href="#">Verify Credential</a></p>
+          </article>
+          <article class="glass-card" data-reveal>
+            <div style="min-height: 60px; margin-bottom: 12px; display: flex; flex-direction: column; justify-content: flex-start;">
+              <h4 style="margin: 0; font-size: 1rem; line-height: 1.3;">ESL004: Advanced English as a Second Language</h4>
+              <p style="margin: 4px 0 0 0; font-size: 0.9rem; opacity: 0.8;">Issued Aug 2025</p>
+            </div>
+            <div style="position: relative; width: 100%; aspect-ratio: 1.42; margin-bottom: 12px; border-radius: 8px; overflow: hidden; background: white;">
+              <embed src="ESL/ESL004.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" width="100%" height="100%" style="pointer-events: none; transform: scale(1.05); transform-origin: top center;">
+              <a href="ESL/ESL004.pdf" target="_blank" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></a>
+            </div>
+            <p><a href="#">Verify Credential</a></p>
+          </article>
+          <article class="glass-card" data-reveal>
+            <div style="min-height: 60px; margin-bottom: 12px; display: flex; flex-direction: column; justify-content: flex-start;">
+              <h4 style="margin: 0; font-size: 1rem; line-height: 1.3;">ESL005: Business-Proficient English as a Second Language</h4>
+              <p style="margin: 4px 0 0 0; font-size: 0.9rem; opacity: 0.8;">Issued Aug 2025</p>
+            </div>
+            <div style="position: relative; width: 100%; aspect-ratio: 1.42; margin-bottom: 12px; border-radius: 8px; overflow: hidden; background: white;">
+              <embed src="ESL/ESL005.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" width="100%" height="100%" style="pointer-events: none; transform: scale(1.05); transform-origin: top center;">
+              <a href="ESL/ESL005.pdf" target="_blank" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></a>
+            </div>
+            <p><a href="#">Verify Credential</a></p>
+          </article>
         </div>
       </div>
+
+      <div class="subsection" data-reveal>
+        <h3>UN Certifications</h3>
+        <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
+          <article class="glass-card" data-reveal>
+            <div style="min-height: 60px; margin-bottom: 12px; display: flex; flex-direction: column; justify-content: flex-start;">
+              <h4 style="margin: 0; font-size: 1rem; line-height: 1.3;">Thought Leadership Course - Synergizing Disaster Risk Reduction and Climate Change Adaptation</h4>
+              <p style="margin: 4px 0 0 0; font-size: 0.9rem; opacity: 0.8;">Issued 2023</p>
+            </div>
+            <div style="position: relative; width: 100%; aspect-ratio: 1.42; margin-bottom: 12px; border-radius: 8px; overflow: hidden; background: white;">
+              <embed src="UNDRR 2023 Certificate - Thought Leadership Course - Synergizing Disaster Risk Reduction and Climate Change Adaptation.pdf.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" width="100%" height="100%" style="pointer-events: none; transform: scale(1.00); transform-origin: top center;">
+              <a href="UNDRR 2023 Certificate - Thought Leadership Course - Synergizing Disaster Risk Reduction and Climate Change Adaptation.pdf.pdf" target="_blank" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; cursor: pointer;"></a>
+            </div>
+            <p><a href="#">Verify Credential</a></p>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -400,63 +600,100 @@
         <article class="glass-card" data-reveal>
         <h3>Academic Excellence</h3>
         <ul>
-          <li>➜ <b>Certificate of Merit</b> — Triyog High School (Nov 2025) Recognized for excellence in the Half Yearly Examination; ranked in the Top 20.</li> <br>
-          <li>➜ <b>Certificate of Merit</b> (BEE Batch 2081) — Triyog High School (May 2025) Achieved the highest GPA in Nepali, HPCA, Hamro Tokha, and Science & Technology; Top 10 overall.</li> <br>
-          <li>➜ <b>Certificate of Merit</b> — Triyog High School (Sep 2024) Recognized for excellence in the Half Yearly Examination; ranked in the Top 20.</li> <br>
-          <li>➜ <b>Certificate of Merit</b> — Triyog High School (December 2025) Recognized for excellence in the Second Unit Test; ranked in the Top 20.</li> 
+          <li><b>Certificate of Merit</b> — Triyog High School (Nov 2025) Recognized for excellence in the Half Yearly Examination; ranked in the Top 20.</li>
+          <li><b>Certificate of Merit</b> (BEE Batch 2081) — Triyog High School (May 2025) Achieved the highest GPA in Nepali, HPCA, Hamro Tokha, and Science & Technology; Top 10 overall.</li>
+          <li><b>Certificate of Merit</b> — Triyog High School (Sep 2024) Recognized for excellence in the Half Yearly Examination; ranked in the Top 20.</li>
+          <li><b>Certificate of Merit</b> — Triyog High School (December 2025) Recognized for excellence in the Second Unit Test; ranked in the Top 20.</li> 
         </ul>
         </article>
         <article class="glass-card" data-reveal>
         <h3>Leadership & Service</h3>
         <ul>
-          <li>➜ <b>Certificate of Appreciation</b> — Triyog Model United Nations 4.0 (Sep 2025) Served as Head of Information Technology in the Organizing Committee (Sep 19–22, 2025).</li ><br>
-          <li>➜ <b>Token of Appreciation</b> — Triyog Model United Nations 4.0 (Sep 2025) In recognition of contributions as a member of the Organizing Committee. </li><br>
-          <li>➜ <b> Vice President, Public Relations Appointment </b> - Triyog Gavel Club (Sep 2025)</li><br>
-          <li>➜ <b> Treasurer </b> - Triyog ECO Club</li><br>
-          <li>➜<b> Executive Committee Member </b> - Triyog Makerspace Club</li><br>
-          <li>➜<b> Volunteering Certificate </b> - Sports Week</li>
+          <li><b>Certificate of Appreciation</b> — Triyog Model United Nations 4.0 (Sep 2025) Served as Head of Information Technology in the Organizing Committee (Sep 19–22, 2025).</li>
+          <li><b>Token of Appreciation</b> — Triyog Model United Nations 4.0 (Sep 2025) In recognition of contributions as a member of the Organizing Committee. </li>
+          <li><b> Vice President, Public Relations Appointment </b> - Triyog Gavel Club (Sep 2025)</li>
+          <li><b> Treasurer </b> - Triyog ECO Club</li>
+          <li><b> Executive Committee Member </b> - Triyog Makerspace Club</li>
+          <li><b> Volunteering Certificate </b> - Sports Week</li>
         </ul>
         </article>
         <article class="glass-card" data-reveal>
         <h3>Debate, Quiz and Communication</h3>
         <ul>
-          <li><b>First Position</b> – Inter House Nepali Debate Competition (Jul 2025) </li><br>
-          <li><b>First Position</b> – Inter House Nepali Debate Competition (Sep 2023) </li><br>
-          <li><b>Third Position</b> – Inter House Quiz Competition (Sep 2025) </li><br>
-          <li><b>Second Position</b> – Inter House Quiz Competition (Aug 2023) </li><br>
-          <li><b>Second Position</b> – Inter House Quiz Competition (Aug 2018) </li><br>
+          <li><b>First Position</b> – Inter House Nepali Debate Competition (Jul 2025) </li>
+          <li><b>First Position</b> – Inter House Nepali Debate Competition (Sep 2023) </li>
+          <li><b>Third Position</b> – Inter House Quiz Competition (Sep 2025) </li>
+          <li><b>Second Position</b> – Inter House Quiz Competition (Aug 2023) </li>
+          <li><b>Second Position</b> – Inter House Quiz Competition (Aug 2018) </li>
           <li><b>First Position</b> – Inter House Quiz Competition (Oct 2019) </li>
         </ul>
         </article>
         <article class="glass-card" data-reveal>
         <h3>Science, STEM & Innovation</h3>
         <ul>
-          <li><b>3rd Position</b> – Inter-School Science Exhibition (Healing Paila) (Feb 2024)</li><br>
-          <li><b>Certificate of Appreciation</b> – Southwestern State College - Inter-School Science Exhibition (Punchu वाणी) (Feb 2024)</li><br>
-          <li><b>Certificate of Appreciation</b> – Southwestern State College - Inter-School Science Exhibition (Healing Paila) (Feb 2024)</li><br>
-          <li><b> Letter of Appreciation </b> - Trinity International College (Jan 2024) - Participation in the 13th Trinity Inter-College SciTech Exhibition-cum-Competition 2024. </li> <br>
+          <li><b>3rd Position</b> – Inter-School Science Exhibition (Healing Paila) (Feb 2024)</li>
+          <li><b>Certificate of Appreciation</b> – Southwestern State College - Inter-School Science Exhibition (Punchu वाणी) (Feb 2024)</li>
+          <li><b>Certificate of Appreciation</b> – Southwestern State College - Inter-School Science Exhibition (Healing Paila) (Feb 2024)</li>
+          <li><b> Letter of Appreciation </b> - Trinity International College (Jan 2024) - Participation in the 13th Trinity Inter-College SciTech Exhibition-cum-Competition 2024. </li>
           <li><b> Certificate of Participation</b> - IEEE Pulchowk Campus Student Branch (May 2025) Completed “Transistor Power: Night Light Challenge” at Stemfluence: Think, Tinker, Thrive. </li>     
         </ul>
         </article>
         <article class="glass-card" data-reveal>
-        <h3>Model United Nations & Global Programs</h3>
+        <h3>World Scholar’s Cup (Feb 2025)</h3>
+        <p><a href="https://www.scholarscup.org/" target="_blank"><b>The World Scholar’s Cup</b></a> — Kathmandu Round</p>
         <ul>
-          <li>Delegate Awards and recognitions</li>
-          <li>Global leadership and diplomacy initiatives</li>
+            <li>Gold Medal: 18th place Overall Scholar</li>
+            <li>Gold Medal: 2nd place BarelySenior team</li>
+            <li>Gold Medal: 7th place BarelySenior scholar</li>
+            <li>Gold Medal: 15th place Debate Team</li>
+            <li>Gold Medal: Team Scholar’s Bowl</li>
+            <li>Gold Medal: Debate</li>
+            <li>Gold Medal: 3rd place in Challenge-History</li>
+            <li>Gold Medal: 7th place in Challenge-Science & Technology</li>
+            <li>Gold Medal: 10th place in Challenge-Special Area</li>
+            <li>Gold Medal: 13th place in Challenge-Art & Music</li>
+            <li>Silver Medal: Overall Senior Team</li>
+            <li>Silver Medal: Team Writing</li>
+            <li>Silver Medal: Collaborative Writing</li>
+            <li>Silver Medal: 29th place in Challenge-Literature & Media</li>
+            <li>Silver Medal: 34th place in Challenge-Social Studies</li>
         </ul>
         </article>
         <article class="glass-card" data-reveal>
-        <h3>Courses and Special Programs</h3>
+        <h3>Cultural, Sports & Early Achievements</h3>
         <ul>
-          <li>Focused training and enrichment programs</li>
-          <li>Workshops and academic intensives</li>
+          <li><b>Certificate of Participation</b> – FOZ Inter-School Drama Competition — NTNC: Central Zoo (Jun 2024)</li>
+          <li><b>Certificate of Participation</b> – QKS March Past — Quality Kathmandu Schools (Feb 2024)</li>
+          <li><b>Grade 3 – Perfect Attendance</b> — Triyog High School (Sep 2020)</li>
+          <li><b>Grade 2 – Best in Conduct</b> — Triyog High School (Apr 2019)</li>
+          <li><b>Grade 1 – Best in Conduct</b> — Triyog High School (Apr 2018)</li>
+          <li><b>Third Position</b> – Inter House Dance Competition — Triyog High School (Aug 2017)</li>
+          <li><b>Third Position</b> – Inter House Singing Competition — Triyog High School (Jul 2017)</li>
+          <li><b>Participation</b> – Inter House Singing Competition — Triyog High School (Jul 2019)</li>
         </ul>
         </article>
         <article class="glass-card" data-reveal>
         <h3>Model United Nations & Global Programs</h3>
         <ul>
-          <li>Delegate Awards and recognitions</li>
-          <li>Global leadership and diplomacy initiatives</li>
+          <li><b>Head of IT - Organising Committee </b> — Triyog Model United Nations (Sep 2025)</li>
+          <li><b>Best International Press</b> — Triyog Model United Nations (Sep 2024)</li>
+          <li><b>Certificate of Participation</b> (International Press – The Kathmandu Post) — Triyog MUN (Sep 2024)</li>
+          <li><b>Certificate of Participation</b> (Delegate of Brazil, UNSC) — Triyog MUN (Sep 2023)</li>
+          <li><a href="https://www.scholarscup.org/" target="_blank"><b>World Scholars Cup </b></a> — Kathmandu Round (Feb 2023)
+            <ul>
+                <li>Gold Medal: Writing Champions</li>
+                <li>3× Silver Medals: Scholars Challenge (Science, History, Literature)</li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+        
+        <article class="glass-card" data-reveal>
+        <h3>Courses & Special Programs</h3>
+        <ul>
+          <li><b>Certificate of Achievement</b> — Triyog TED-Ed Club (Mar 2025)<br>Shared an idea worth spreading.</li>
+          <li><b>Completion of Course – Advanced Level 1</b> — 3DI School New Zealand (Mar 2024)</li>
+          <li><b>Completion of Course – Level 3</b> — 3DI School New Zealand (Mar 2023)</li>
         </ul>
         </article>
       </div>
@@ -501,3 +738,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+
