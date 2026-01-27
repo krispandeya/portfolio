@@ -587,7 +587,7 @@ ul {
 
 .alt-timeline-item.left {
   left: 0;
-  text-align: right;
+  text-align: left;
 }
 
 .alt-timeline-item.right {
