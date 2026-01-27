@@ -557,6 +557,109 @@ ul {
   }
 }
 
+
+/* Grade Based Alternating Vertical Timeline */
+.alt-timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.alt-timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: hsl(var(--primary));
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+  border-radius: 2px;
+}
+
+.alt-timeline-item {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.alt-timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.alt-timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.alt-timeline-item::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  background-color: hsl(var(--bg));
+  border: 4px solid hsl(var(--primary));
+  top: 25px;
+  border-radius: 50%;
+  z-index: 10;
+  box-shadow: 0 0 0 4px hsla(var(--primary), 0.2);
+}
+
+.alt-timeline-item.right::after {
+  left: -10px;
+}
+
+.alt-timeline-content {
+  padding: 24px;
+  background: hsla(var(--card), 0.7);
+  border-radius: var(--radius);
+  border: 1px solid hsl(var(--highlight));
+  box-shadow: 0 0 12px hsla(var(--highlight), 0.3), var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.alt-timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px hsla(var(--highlight), 0.6), var(--shadow);
+  z-index: 5;
+}
+
+.alt-timeline-date {
+  font-weight: 700;
+  color: hsl(var(--primary));
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Mobile responsive adjustments for timeline */
+@media (max-width: 768px) {
+  .alt-timeline::after {
+    left: 30px;
+  }
+  
+  .alt-timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  .alt-timeline-item.left, 
+  .alt-timeline-item.right {
+    left: 0;
+    text-align: left;
+  }
+  
+  .alt-timeline-item.left::after, 
+  .alt-timeline-item.right::after {
+    left: 20px;
+  }
+}
+
 @media (max-width: 900px) {
   .nav {
     display: none;
