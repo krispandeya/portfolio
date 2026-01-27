@@ -293,6 +293,10 @@ ul {
   box-shadow: 0 24px 50px -28px rgba(22, 17, 40, 0.35);
 }
 
+.glass-card h4 a {
+  color: #007bff;
+}
+
 .timeline {
   display: grid;
   gap: 18px;
